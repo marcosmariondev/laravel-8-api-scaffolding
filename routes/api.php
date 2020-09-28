@@ -1,0 +1,25 @@
+<?php
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| API Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register API routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| is assigned the "api" middleware group. Enjoy building your API!
+|
+*/
+
+Route::post('login', '\App\Http\Controllers\PassportController@login');
+//Route::post('signup', 'PassportController@signup');
+//Route::post('validateToken', 'PassportController@validateToken');
+//Route::post('password/send-password-reset-link', 'ForgotPasswordController@sendPasswordResetLink');
+//Route::post('password/reset', 'ResetPasswordController@resetPassword');
+
+Route::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
+});

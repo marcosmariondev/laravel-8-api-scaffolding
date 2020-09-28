@@ -24,7 +24,17 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 
+Route::get('/business_categories', function (Request $request) {
+    return 'a';
+});
+
+//Route::get('a', 'App\Http\Controllers\BusinessCategoryController@index');
+
 Route::apiResources([
-    'business_categories' => App\Http\Controllers\BusinessCategoryController::class,
+    'business_category' => App\Http\Controllers\BusinessCategoryController::class,
 ]);
+
+//Route::apiResources([
+//    'business_categories' => App\Http\Controllers\BusinessCategoryController::class,
+//]);
 

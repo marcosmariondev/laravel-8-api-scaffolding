@@ -7,7 +7,7 @@ namespace App\Services;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-use Modules\Authentication\Models\BusinessCategory;
+use App\Models\BusinessCategory;
 
 class BusinessCategoryService
 {

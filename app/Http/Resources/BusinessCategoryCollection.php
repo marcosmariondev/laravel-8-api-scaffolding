@@ -15,7 +15,7 @@ class BusinessCategoryCollection extends ResourceCollection
      *
      * @var string
      */
-    public $collects = 'Modules\Authentication\Http\Resources\BusinessCategoryResource';
+    public $collects = 'App\Http\Resources\BusinessCategoryResource';
 
     /**
      * Transform the resource collection into an array.

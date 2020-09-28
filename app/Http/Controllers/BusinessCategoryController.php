@@ -38,7 +38,7 @@ class BusinessCategoryController extends ApiController
      */
     public function index(): JsonResponse
     {
-        dd(1);
+
         try {
 
             $limit = (int)(request('limit') ?? 20);
@@ -132,9 +132,11 @@ class BusinessCategoryController extends ApiController
      */
     public function update(BusinessCategory $businessCategory)
     {
+        dd($businessCategory);
         try {
 
             $updateRequest = new BusinessCategoryUpdateRequest();
+
             $validator = Validator::make(request()->all(), $updateRequest->rules(), $updateRequest->messages());
 
             if ($validator->fails()) {

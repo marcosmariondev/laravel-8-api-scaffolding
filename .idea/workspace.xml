@@ -142,15 +142,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Validators" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-18.04\var\www\html\marion\api\app\Http" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-18.04\var\www\html\marion\api\database\migrations" />
       <recent name="\\wsl$\Ubuntu-18.04\var\www\html\marion\api\app\Validators" />
+      <recent name="\\wsl$\Ubuntu-18.04\var\www\html\marion\api\app\Http\Resources" />
       <recent name="\\wsl$\Ubuntu-18.04\var\www\html\marion\api\app\Services" />
-      <recent name="\\wsl$\Ubuntu-18.04\var\www\html\marion\api\app\Http\Controllers" />
+      <recent name="\\wsl$\Ubuntu-18.04\var\www\html\marion\api\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -167,7 +172,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601295189431</updated>
-      <workItem from="1601295190683" duration="3212000" />
+      <workItem from="1601295190683" duration="3854000" />
     </task>
     <servers />
   </component>

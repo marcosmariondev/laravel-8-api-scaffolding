@@ -14,12 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('login', '\App\Http\Controllers\PassportController@login');
+//Route::get('unauthenticated', 'PassportController@unAuthenticated')->name('unAuthenticated');
+//Route::post('login', 'PassportController@login');
 //Route::post('signup', 'PassportController@signup');
 //Route::post('validateToken', 'PassportController@validateToken');
 //Route::post('password/send-password-reset-link', 'ForgotPasswordController@sendPasswordResetLink');
 //Route::post('password/reset', 'ResetPasswordController@resetPassword');
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::apiResources([
+    'business_categories' => App\Http\Controllers\BusinessCategoryController::class,
+]);
+
